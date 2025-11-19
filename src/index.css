@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 214 100% 98%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --primary: 210 79% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 79% 66%;
+
+    --secondary: 214 100% 96%;
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 214 50% 95%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 186 77% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 210 79% 56%;
+
+    --success: 142 71% 45%;
+    --warning: 38 92% 50%;
+
+    --ai-bubble: 210 100% 97%;
+    --user-bubble: 210 79% 56%;
+    --speaking-highlight: 186 77% 52%;
+
+    --radius: 1rem;
+
+    --gradient-calm: linear-gradient(135deg, hsl(210 100% 98%), hsl(214 100% 96%));
+    --gradient-primary: linear-gradient(135deg, hsl(210 79% 56%), hsl(186 77% 52%));
+    --gradient-glow: radial-gradient(circle at center, hsl(210 79% 66% / 0.3), transparent 70%);
+
+    --shadow-soft: 0 4px 20px hsl(210 79% 56% / 0.08);
+    --shadow-elevated: 0 8px 30px hsl(210 79% 56% / 0.12);
+    --shadow-glow: 0 0 40px hsl(210 79% 66% / 0.25);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 215 28% 17%;
+    --foreground: 210 40% 98%;
+
+    --card: 215 25% 20%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 25% 20%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 79% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 79% 66%;
+
+    --secondary: 215 25% 23%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 25% 23%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 186 77% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 25% 30%;
+    --input: 215 25% 30%;
+    --ring: 210 79% 56%;
+
+    --success: 142 71% 45%;
+    --warning: 38 92% 50%;
+
+    --ai-bubble: 215 25% 23%;
+    --user-bubble: 210 79% 56%;
+    --speaking-highlight: 186 77% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
